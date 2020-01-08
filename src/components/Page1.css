@@ -1,0 +1,51 @@
+.page1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40%;
+}
+
+.username {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 175px;
+  bottom: 0;
+}
+
+.typer {
+  position: absolute;
+  height: 150px;
+  bottom: 0;
+}
+
+.arr{width: 10%;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  left: calc(50% - 10px);
+  bottom:15px;
+  -webkit-animation: twinkling 1s infinite ease-in-out;
+}
+
+.arr i{
+  display: inline-block;
+  width:20px;
+  height:20px;
+  border-width:0;
+  border-right-width:2px;
+  border-top-width:2px;
+  border-style:solid;
+  border-color:rgb(156,74,27);
+  transform: rotateZ(135deg);
+}
+@-webkit-keyframes twinkling{    /*透明度由0到1*/
+  0%{
+      opacity:0; /*透明度为0*/
+  }
+  100%{
+      opacity:1; /*透明度为1*/
+  }
+}

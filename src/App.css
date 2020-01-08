@@ -1,0 +1,52 @@
+
+@import '~react-id-swiper/src/styles/css/swiper.css';
+@import '~antd/dist/antd.css';
+
+.swiper-slide, .firstPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 175px;
+  bottom: 0;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github {
+  margin-right:5px;
+}
+
+.App, .firstPage {
+  height: 100%;
+}
+
+.stress {
+  color: orangered;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.failed {
+  position: absolute;
+  top:0;
+}
+
+.spin {
+  position: absolute;
+  bottom: 8%;
+  width: 100%;
+}

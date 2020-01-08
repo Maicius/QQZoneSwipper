@@ -1,0 +1,36 @@
+{
+  "name": "github-annual-report",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@octokit/rest": "^16.8.1",
+    "antd": "^3.12.3",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "radium": "^0.25.1",
+    "react": "^16.7.0",
+    "react-animations": "^1.0.0",
+    "react-dom": "^16.7.0",
+    "react-id-swiper": "^1.6.8",
+    "react-scripts": "2.1.3",
+    "typed.js": "^2.0.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "deploy": "./deploy.sh",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
