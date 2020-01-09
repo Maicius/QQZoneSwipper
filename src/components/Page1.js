@@ -11,6 +11,7 @@ class Page1 extends Component {
 
     this.state = {
       arrow: false,
+      text: "立即<br/>查看"
     };
     const query = queryParse();
     this.state.username = query.username
@@ -26,26 +27,20 @@ class Page1 extends Component {
   componentWillUnmount() {
     this.timer && clearTimeout(this.timer);
   }
-
+  
   render() {
     return (
       <div>
         {this.props.page === 1 ? (
-          <div className="page1">
-            <p className="mb5 username">
-              <GitHub className="github" />
-              <span className="stress">{this.state.username}</span>
-            </p>
-            <div className="typer">
-              <Typer
-                strings={[
-                  "<strong>$</strong> git add .^1000\n<strong>$</strong> git commit -m 'get report'^1000\n<strong>$</strong> git push",
-                ]}
-              />
+          <div className="bg-back">
+            <div className="bg-white"></div>
+            <div className="title-wrapper">
+              <h1 className="title title-1"></h1>
+              <h1 className="title title-2"></h1>
             </div>
-            {this.state.arrow ? (
-            <div className="arr"><i></i></div>
-            ) : null}
+              <div className="nickname">{this.props.info.nickname}</div>
+                  <a className="button"> <span dangerouslySetInnerHTML={{__html: this.state.text}}></span></a>
+              <div className="card"></div>
           </div>
         ) : null}
       </div>

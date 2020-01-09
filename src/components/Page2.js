@@ -31,48 +31,43 @@ class Page2 extends Component {
     return (
       <StyleRoot>
         {this.props.page === 2 ? (
-          <div className="page">
-            <Repo className="mb20"/>
-            <p style={styles.fadeInUp1s}>这一年里</p>
-            <p style={styles.fadeInUp1s} className="mb20">
-              你一共
-            </p>
-            {this.props.info.languageNums !== 0 ? (
-              <p style={styles.fadeInUp2s}>
-                使用了
-                <span className="stress">{this.props.info.languageNums}</span>
-                种编程语言
-              </p>
-            ) : (
-              <p style={styles.fadeInUp2s}>敲击了很多文本</p>
-            )}
-            {this.props.info.repoNums !== 0 ? (
-              <p style={styles.fadeInUp2s}>
-                通过GitHub向
-                <span className="stress">{this.props.info.repoNums}</span>
-                个代码仓库的主分支
-              </p>
-            ) : (
-              <p style={styles.fadeInUp2s}>在本地通过多个代码仓库</p>
-            )}
-            {this.props.info.commitNums !== 0 ? (
-              <p style={styles.fadeInUp2s}>
-                提交了
-                <span className="stress">{this.props.info.commitNums}</span>
-                次代码
-              </p>
-            ) : (
-              <p style={styles.fadeInUp2s}>提交了多次代码</p>
-            )}
-            {this.props.info.eventNums !== 0 ? (
-              <p style={styles.fadeInUp2s}>
-                活跃了
-                <span className="stress">{this.props.info.eventNums}</span>
-                天的时间
-              </p>
-            ) : (
-              <p style={styles.fadeInUp2s}>在社区中比较沉寂</p>
-            )}
+          <div className="section page page-2">
+            <div className="night night-1"></div>
+            <div className="night night-2"></div>
+            <div className="stars">
+              <span className="star star-1"></span>
+              <span className="star star-2"></span>
+              <span className="star star-3"></span>
+              <span className="star star-4"></span>
+            </div>
+            <div className="meteors">
+              <span className="meteor meteor-1"></span>
+              <span className="meteor meteor-2"></span>
+            </div>
+            <div className="moon-wrapper"></div>
+            <div className="moon">
+              <div className="swing">
+                <div className="man"></div>
+              </div>
+            </div>
+            <div className="building building-1"></div>
+            <div className="content">
+              
+              <p style={styles.fadeInUp1s} className="para mt-10"><p className="stress fs-18">{this.props.info.first_time}</p>你第一次登陆了QQ空间</p>
+              {this.props.info.first_mood_time !== "" ? (
+                <p style={styles.fadeInUp2s} className="para mt-35">
+                  <p className="stress fs-18">{this.props.info.first_mood_time}</p>
+                  你发出了第一条动态
+                </p>
+              ) : null}
+              {this.props.info.first_friend_time !== "" ? (
+                <p style={styles.fadeInUp2s} className="para mt-35">
+                  <p className="stress fs-18">{this.props.info.first_friend_time}</p>
+                  你添加了第一位好友
+                  <span className="stress fs-18">{this.props.info.first_friend}</span>
+                </p>
+              ) : null} 
+            </div>
           </div>
         ) : null}
       </StyleRoot>

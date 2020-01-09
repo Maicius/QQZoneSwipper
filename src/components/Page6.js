@@ -29,31 +29,27 @@ class Page1 extends Component {
         animationName: Radium.keyframes(fadeInUp, 'fadeInUp'),
       },
     };
+    var friend_list = [];
+    for (var i = 0; i < this.props.info.total_like_list.length; i++) {
+      var item = this.props.info.total_like_list[i];
+      friend_list.push(<p style={styles.fadeInUp2s}>{item.user}, <span className="stress">{item.num}</span>次</p>)
+    }
+
     return (
       <StyleRoot>
-        {this.props.info.mostDay.repo !== '' && this.props.page === 6 ? (
-          <div className="page">
-          <Focus className="mb20"/>
-            <p style={styles.fadeInUp1s}>这一年</p>
-            <p style={styles.fadeInUp1s}>
-              你有
-              <span className="stress">{this.props.info.mostDay.count}</span>
-              天都向
-            </p>
-            <p style={styles.fadeInUp1s} className="mb20">
-              <span className="stress">{this.props.info.mostDay.repo}</span>
-              提交了代码
-            </p>
-            <p style={styles.fadeInUp2s}>所有熟悉的项目中</p>
-            <p style={styles.fadeInUp2s}>你对它最专一</p>
-          </div>
-        ) : this.props.page === 6 ? (
-          <div className="page">
-          <Focus className="mb20"/>
-            <p style={styles.fadeInUp1s}>这一年</p>
-            <p style={styles.fadeInUp1_5s}>你没有很心仪的项目</p>
-            <p style={styles.fadeInUp2s}>大概在项目管理上</p>
-            <p style={styles.fadeInUp2_5s}>有了不少提高</p>
+        {this.props.page === 6 && this.props.info.total_cmt > 0? (
+            <div className="page">
+            <Focus className="mb20"/>
+            {this.props.info.total_like !== 0 ? (
+              <p style={styles.fadeInUp2s}>
+                你的说说一共收到了
+                <span className="stress">{this.props.info.total_cmt}</span>
+                条评论
+              </p>
+            ) : null}
+            {
+              friend_list
+            }
           </div>
         ) : null}
       </StyleRoot>

@@ -30,25 +30,42 @@ class Page1 extends Component {
     };
     return (
       <StyleRoot>
-        {this.props.info.specialDay.date !== '' && this.props.page === 4 ? (
-          <div className="page">
-            <Day className="mb20"/>
-            <p style={styles.fadeInUp1s} className="stress">
-             日
-            </p>
-            <p style={styles.fadeInUp1_5s} className="mb20">
-              大概是很特别的一天
-            </p>
-            <p style={styles.fadeInUp2s}>这一天里</p>
-            <p style={styles.fadeInUp2_5s}>
-              你向
-              <span className="stress">{this.props.info.specialDay.repo}</span>
-              仓库提交了
-            </p>
-            <p style={styles.fadeInUp3s}>
-              <span className="stress">{this.props.info.specialDay.count}</span>
-              次代码
-            </p>
+        {this.props.info.most_date !== '' && this.props.page === 4 ? (
+          <div className="section page page-5">
+            <div className="mountain mountain-1"></div>
+            <div className="mountain mountain-2"></div>
+            <div className="tree tree-1"></div>
+            <div className="tree tree-2"></div>
+            <div className="tree tree-3"></div>
+            <div className="tree tree-4"></div>
+            <div className="tree tree-5"></div>
+            <div className="tree tree-6"></div>
+            <div className="tree tree-7"></div>
+            <div className="tree tree-8"></div>
+            <div className="moon-wrapper">
+              <div className="moon">
+                <div className="man"></div>
+              </div>
+            </div>
+            <div className="content">
+              <p style={styles.fadeInUp1s} className="stress">
+                {this.props.info.most_date}
+                </p>
+                <p style={styles.fadeInUp1_5s} className="mb20">
+                  大概是很特别的一天
+                </p>
+                <p style={styles.fadeInUp2s}>这一天里，你收获了好友们最多的祝福</p>
+                <p style={styles.fadeInUp2_5s}>
+                  大家给你点了
+                  <span className="stress">{this.props.info.most_date_like}</span>
+                  次赞
+                </p>
+                <p style={styles.fadeInUp3s}>
+                  发出了
+                  <span className="stress">{this.props.info.most_date_cmt}</span>
+                  条评论
+                </p>
+            </div>
           </div>
         ) : this.props.page === 4 ? (
           <div className="page">

@@ -45,8 +45,73 @@ class App extends Component {
       failedRequest: 0,
       username: "maicius"
     };
-    this.repos = {};
     this.info = {
+      QQ: "XXXXX",
+      nickname: "麦子",
+      mood_num: 2735,
+      rz_num: 108,
+      photo_num: 15125,
+      friend_num: 1500,
+      first_time: "2009-09-26",
+      first_friend: "XXX",
+      first_friend_time: "2009-12-25",
+      years: 11,
+      first_friend_header: "src/web/static/image/XXXXX/header/XXXX.jpg",
+      like_friend_name: "Test2",
+      like_friend_header: "",
+      cmt_friend_name_header: "",
+      first_mood_time: "2010年05月10日",
+      cmt_friend_name: "Test2",
+      single_friend: 17,
+      most_date: "2015年09月22日",
+      most_date_like: 1100,
+      most_date_cmt: 122,
+      most_time_state: 7.0,
+      is_night: 1,
+      most_friend: "Test2",
+      most_common_friend_num: 160,
+      most_group: "Test3",
+      most_group_member: 33,
+      total_like: 1000,
+      total_like_list: [
+        {
+          "name": "麦子1",
+          "value": "100"
+        }, {
+          "name": "麦子2",
+          "value": "96"
+        }, {
+          "name": "冬子1",
+          "value": "40"
+        }, {
+          "name": "冬子2",
+          "value": "20"
+        }, {
+          "name": "冬子3",
+          "value": "10"
+        }
+      ],
+      total_cmt: 1000,
+      total_cmt_people: 100,
+      "total_like_people": 1000,
+      total_cmt_list: [
+        {
+          "name": "Test1",
+          "value": "100"
+        }, {
+          "name": "Test2",
+          "value": "96"
+        }, {
+          "name": "Test3",
+          "value": "40"
+        }, {
+          "name": "Test4",
+          "value": "20"
+        }, {
+          "name": "Test5",
+          "value": "10"
+        }
+      ],
       eventNums: 244,
       addLines: 20010,
       deleteLines: 20010,
@@ -65,7 +130,7 @@ class App extends Component {
       },
       languageLastCommit: {
         'Java': '2019-03-05T01:29:00Z',
-        'PHP': '2019-01-01T11:22:00Z',
+        'PHP': '2019-01-01T11:22:00Z'
       },
       likePeriod: {
         name: 'afternoon',
@@ -101,7 +166,6 @@ class App extends Component {
       language: {
         Java: 2,
         JavaScript: 3
-    
       }
     }
   }

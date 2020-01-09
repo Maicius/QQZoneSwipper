@@ -2,13 +2,6 @@
 @import '~react-id-swiper/src/styles/css/swiper.css';
 @import '~antd/dist/antd.css';
 
-.swiper-slide, .firstPage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -34,7 +27,7 @@
 }
 
 .stress {
-  color: orangered;
+  color: cadetblue;
   font-weight: bold;
   margin-left: 5px;
   margin-right: 5px;
@@ -49,4 +42,10 @@
   position: absolute;
   bottom: 8%;
   width: 100%;
+}
+.echart_dom {
+  top: 50%;
+  width:80%;
+  height:200px;
+  position: absolute;
 }

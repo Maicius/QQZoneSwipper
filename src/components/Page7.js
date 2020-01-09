@@ -31,22 +31,26 @@ class Page1 extends Component {
     return (
       <StyleRoot>
         {this.props.info.likePeriod.name !== '' && this.props.page === 7 ? (
-          <div className="page">
-          <Time className="mb20"/>
-            <p style={styles.fadeInUp1s}>
-              你喜欢在<span className="stress">{this.props.info.likePeriod.name}</span>提交代码
-            </p>
-            <p style={styles.fadeInUp1_5s}>
-              特别是
-              {this.props.info.likeWeekType.name === '工作日' ? '繁忙的' : '安静的'}
-              <span className="stress">{this.props.info.likeWeekType.name}</span>
-            </p>
-            <p style={styles.fadeInUp2s}>365天中</p>
-            <p style={styles.fadeInUp2_5s}>
-              你有<span className="stress">{this.props.info.likeWeekType.count}</span>个{this.props.info.likeWeekType.name}
-              提交了代码
-            </p>
-          </div>
+          <div>
+                <div class="wave1 wave1-1">
+                <div class="ripple"></div>
+              </div>
+              <div class="wave1 wave1-2"></div>
+              <div class="wave2 wave2-1"></div>
+              <div class="wave2 wave2-2"></div>
+              <div class="circle"></div>
+              <div class="man-wrapper">
+                <div class="splash"></div>
+                <div class="man"></div>
+              </div>
+              <div class="content">
+                <p class="para"><span class="fc-red">5</span>月<span class="fc-red">28</span>日大概是很特别的一天</p>
+                <p class="para para-2">这一天里</p>
+                <p class="para para-2">TA把<span class="fc-red">Lorde</span>的<span class="fc-red">《Liability》</span>
+                </p>
+                <p class="para para-2">反复听了<span class="fc-red fs-18">162</span>次</p>
+              </div>
+            </div>
         ) : this.props.page === 7 ? (
           <div className="page">
           <Time className="mb20"/>

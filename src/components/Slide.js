@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './Slide.css';
+
+import './net_main.css';
 
 import Swiper from 'react-id-swiper';
 import { fadeInUp } from 'react-animations';
@@ -86,19 +87,19 @@ class Slide extends Component {
             <source id="src_mp3" type="audio/mp3" src="http://githubreport.oss-cn-beijing.aliyuncs.com/music.mp3" />
           </audio> */}
           <Swiper {...params}>
-            <section style={styles.section1}>
-              <Page1 page={this.state.page} />
+            <section className="section page page-1 page-home">
+              <Page1 page={this.state.page} info={this.props.info}/>
             </section>
-            <section style={styles.section}>
+            <section>
               <Page2 page={this.state.page} info={this.props.info} />
             </section>
-            <section style={styles.section}>
+            <section>
               <Page3 page={this.state.page} info={this.props.info} />
             </section>
-            <section style={styles.section}>
+            <section>
               <Page4 page={this.state.page} info={this.props.info} />
             </section>
-            <section style={styles.section}>
+            <section>
               <Page5 page={this.state.page} info={this.props.info} />
             </section>
             <section style={styles.section}>
