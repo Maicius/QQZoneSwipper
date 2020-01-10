@@ -102,13 +102,13 @@ class Slide extends Component {
             <section>
               <Page5 page={this.state.page} info={this.props.info} />
             </section>
-            <section style={styles.section}>
+            <section>
               <Page6 page={this.state.page} info={this.props.info} />
             </section>
-            <section style={styles.section}>
+            <section>
               <Page7 page={this.state.page} info={this.props.info} />
             </section>
-            <section style={styles.section}>
+            <section>
               <Page8 page={this.state.page} info={this.props.info} />
             </section>
             <section style={styles.section}>

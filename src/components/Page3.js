@@ -4,7 +4,7 @@ import Radium, { StyleRoot } from 'radium';
 import './Slide.css';
 import { ReactComponent as Line } from '../icon/line.svg';
 
-class Page2 extends Component {
+class Page3 extends Component {
   render() {
     const styles = {
       fadeInUp1s: {
@@ -83,8 +83,8 @@ class Page2 extends Component {
               ) : (
                 <p style={styles.fadeInUp2s}>没有添加好友</p>
               )}
-              {this.props.info.mood_num === 0 && this.props.info.rz_num && this.props.info.photo_num  ? (
-              <p style={styles.fadeInUp2s}>你真是一个佛系玩家</p>
+              {this.props.info.mood_num === 0 && this.props.info.rz_num === 0 && this.props.info.photo_num ===0  ? (
+              <p style={styles.fadeInUp2s}>你莫不是个小号吧</p>
               ) : (
                 <p style={styles.fadeInUp2s}>这里记录着你成长的点点滴滴</p>
               )}
@@ -96,4 +96,4 @@ class Page2 extends Component {
   }
 }
 
-export default Page2;
+export default Page3;

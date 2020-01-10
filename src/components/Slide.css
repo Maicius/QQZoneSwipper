@@ -1,3 +1,23 @@
 p {
     font-size: 15px;
 }
+.echart_dom {
+    top: 50%;
+    width:80%;
+    height:200px;
+    position: absolute;
+}
+.echart_dom_top {
+    top: 0%;
+    width:60%;
+    float: right;
+  }
+  .echart_dom_bottom {
+    top: 40%;
+    width:60%;
+    position: absolute;
+}
+.mt-65 {
+    margin: 0;
+    margin-top: 65px;
+}

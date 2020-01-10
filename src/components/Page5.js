@@ -4,10 +4,10 @@ import Radium, { StyleRoot } from 'radium';
 import './Slide.css';
 import { ReactComponent as Moon } from '../icon/moon.svg';
 import { ReactComponent as Line } from '../icon/line.svg';
-import ReactEcharts from "echarts-for-react";
+import {getWordCloudOption} from '../utils/helper';
+import ReactEcharts from 'echarts-for-react';
 require('echarts-wordcloud');
-
-class Page1 extends Component {
+class Page5 extends Component {
 
   getOption(data) {
     return {
@@ -82,7 +82,7 @@ class Page1 extends Component {
             <div class="meteor meteor-2"></div>
             <div className="echart_dom">
                     <ReactEcharts
-                      option={this.getOption(this.props.info.total_like_list)}
+                      option={getWordCloudOption(this.props.info.total_like_list)}
                       notMerge={true}
                       lazyUpdate={true}
                       theme={"theme_name"}
@@ -101,20 +101,18 @@ class Page1 extends Component {
             <div class="content">
               {this.props.info.total_like !== 0 ? (
                 <div>
-                  <p style={styles.fadeInUp2s}>超过 <span className="stress">{this.props.info.total_like_people}</span> 位好友 </p>
                   <p style={styles.fadeInUp2s}>
-                    给你累计点了
+                    你的动态累计收到了
+                  </p>
+                  <p style={styles.fadeInUp2s} className="mt-35">
                     <span className="stress">{this.props.info.total_like}</span>
                     个赞
                   </p>
-                  <p style={styles.fadeInUp2s}> 还有 <span className="stress">{this.props.info.total_cmt_people}</span> 位好友 </p>
                   <p style={styles.fadeInUp2s}>
-                    在你的评论区留言了
                     <span className="stress">{this.props.info.total_cmt}</span>
-                    次
+                    次评论
                   </p>
                   <p className="mt-35" style={styles.fadeInUp2s}>他们的名字，你应该很熟悉</p>
-                  
                 </div>
 
               ) : null}
@@ -127,4 +125,4 @@ class Page1 extends Component {
   }
 }
 
-export default Page1;
+export default Page5;

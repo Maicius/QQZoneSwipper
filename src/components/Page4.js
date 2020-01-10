@@ -4,7 +4,7 @@ import Radium, { StyleRoot } from 'radium';
 import './Slide.css';
 import { ReactComponent as Day } from '../icon/day.svg';
 
-class Page1 extends Component {
+class Page4 extends Component {
   render() {
     const styles = {
       fadeInUp1s: {
@@ -79,4 +79,4 @@ class Page1 extends Component {
   }
 }
 
-export default Page1;
+export default Page4;

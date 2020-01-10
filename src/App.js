@@ -48,10 +48,10 @@ class App extends Component {
     this.info = {
       QQ: "XXXXX",
       nickname: "麦子",
-      mood_num: 2735,
-      rz_num: 108,
-      photo_num: 15125,
-      friend_num: 1500,
+      mood_num: 0,
+      rz_num: 0,
+      photo_num: 0,
+      friend_num: 0,
       first_time: "2009-09-26",
       first_friend: "XXX",
       first_friend_time: "2009-12-25",
@@ -94,6 +94,28 @@ class App extends Component {
       total_cmt: 1000,
       total_cmt_people: 100,
       "total_like_people": 1000,
+      "most_group_list": [
+        {
+          "name": "群名1",
+          "value": 400
+        },
+            {
+          "name": "群名2",
+          "value": 300
+        },
+            {
+          "name": "群名3",
+          "value": 200
+        },
+            {
+          "name": "群名4",
+          "value": 100
+        },
+            {
+          "name": "群名5",
+          "value": 50
+        }
+      ],
       total_cmt_list: [
         {
           "name": "Test1",
@@ -110,6 +132,37 @@ class App extends Component {
         }, {
           "name": "Test5",
           "value": "10"
+        }
+      ],
+      "stranger_ratio": "90.5%",
+      "my_top_words": [
+        {
+          "name": "努力",
+          "value": 200
+        }, {
+          "name": "奋斗",
+          "value": 180
+        }, {
+          "name": "Test",
+          "value": 60
+        }, {
+          "name": "我好菜",
+          "value": 150
+        }
+      ],
+      "friend_top_words": [
+        {
+          "name": "大佬",
+          "value": 200
+        }, {
+          "name": "TQL",
+          "value": 180
+        }, {
+          "name": "注意身体",
+          "value": 120
+        }, {
+          "name": "别熬夜",
+          "value": 100
         }
       ],
       eventNums: 244,
