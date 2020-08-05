@@ -30,7 +30,7 @@ class Page2 extends Component {
     };
     return (
       <StyleRoot>
-        {this.props.page === 2 ? (
+
           <div className="section page page-2">
             <div className="night night-1"></div>
             <div className="night night-2"></div>
@@ -51,8 +51,8 @@ class Page2 extends Component {
               </div>
             </div>
             <div className="building building-1"></div>
+          {this.props.page === 2 ? (
             <div className="content">
-              
               <p style={styles.fadeInUp1s} className="para mt-10 stress fs-18">
               {this.props.info.first_time}
                 </p>
@@ -73,8 +73,9 @@ class Page2 extends Component {
                 </p>
               ) : null} 
             </div>
+          ) : null}
           </div>
-        ) : null}
+        
       </StyleRoot>
     );
   }

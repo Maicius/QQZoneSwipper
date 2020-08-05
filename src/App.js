@@ -1,27 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import {
-  CLIENT_ID,
-  CLIENT_SECRET,
-  ACCESS_TOKEN,
-  USERNAME,
-  AVATAR,
-  PROXY,
-  STATUS,
-  OWNER,
-  REPO,
-  OTHER,
-  INFO,
-  BG1,
-  BG2,
-  WECHAT,
-  MUSIC,
   TIPS1_TIME,
   TIPS2_TIME,
-  PER_PAGE,
-  ISSUE_NUM,
-  YEAR_2018,
-  YEAR_2019,
 } from './utils/constant';
 
 import Alert from 'antd/lib/alert';
@@ -93,7 +74,11 @@ class App extends Component {
       ],
       total_cmt: 1000,
       total_cmt_people: 100,
-      "total_like_people": 1000,
+      total_like_people: 1000,
+      cmt_friend_num: 100,
+      cmt_msg_num: 1000,
+      like_friend_num: 999,
+      non_activate_friend_num: 500,
       "most_group_list": [
         {
           "name": "群名1",
@@ -134,7 +119,6 @@ class App extends Component {
           "value": "10"
         }
       ],
-      "stranger_ratio": "90.5%",
       "my_top_words": [
         {
           "name": "努力",
@@ -164,62 +148,7 @@ class App extends Component {
           "name": "别熬夜",
           "value": 100
         }
-      ],
-      eventNums: 244,
-      addLines: 20010,
-      deleteLines: 20010,
-      totalLines: 40020,
-      likeWeekType: {
-        name: '周末',
-        count: 52
-      },
-      weekendNums: 52,
-      weekdayNums: 31,
-      issueNums: 234, // 包括创建，指派，提及和订阅的问题
-      starNums: 56, // 创建star的数量
-      forget: {
-        language: 'PHP',
-        date: '2019-01-01T11:22:00Z'
-      },
-      languageLastCommit: {
-        'Java': '2019-03-05T01:29:00Z',
-        'PHP': '2019-01-01T11:22:00Z'
-      },
-      likePeriod: {
-        name: 'afternoon',
-        count: 30
-      },
-      period: {
-        morningNums: 15,
-        afternoonNums: 30,
-        eveningNums: 16,
-        dawnNums: 5
-      },
-      mostDay: {
-        count: 6,
-        repo: 'test'
-      },
-      latestDay: {
-        date: '2019-03-05T01:29',
-        repo: 'test'
-      },
-      specialDay: {
-        date: '2019-03-05T01:29:00Z',
-        repo: 'test',
-        count: 3
-      },
-      commitNums: 231,
-      repoNums: 20,
-      languageNums: 8,
-      mostLanguage: {
-        name: 'JavaScript',
-        repoNums: 3,
-        commitNums: 65
-      },
-      language: {
-        Java: 2,
-        JavaScript: 3
-      }
+      ]
     }
   }
 

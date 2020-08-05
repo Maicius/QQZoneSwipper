@@ -70,7 +70,6 @@ class Page5 extends Component {
 
     return (
       <StyleRoot>
-        {this.props.page === 5 && this.props.info.total_like > 0? (
             <div className="section page page-6">
             <div class="night night-1"></div>
             <div class="night night-2"></div>
@@ -98,29 +97,36 @@ class Page5 extends Component {
               <div class="cat cat-2"></div>
               <div class="shadow"></div>
             </div>
-            <div class="content">
-              {this.props.info.total_like !== 0 ? (
-                <div>
-                  <p style={styles.fadeInUp2s}>
-                    你的朋友们为你点了
-                  </p>
-                  <p style={styles.fadeInUp2s} className="mt-35">
-                    <span className="stress">{this.props.info.total_like}</span>
-                    次赞
-                  </p>
-                  <p style={styles.fadeInUp2s}>
-                    发出
-                    <span className="stress">{this.props.info.total_cmt}</span>
-                    次评论
-                  </p>
-                  <p className="mt-35" style={styles.fadeInUp2s}>他们的名字，你应该很熟悉</p>
-                </div>
-
-              ) : null}
-              
-            </div>
+            {this.props.page === 5 && this.props.info.total_like > 0 ? (
+              <div class="content">
+                
+                {this.props.info.total_like !== 0 ? (
+                  <div>
+                    <p style={styles.fadeInUp2s}>
+                      你的朋友们为你点了
+                    </p>
+                    <p style={styles.fadeInUp2s} className="mt-35">
+                      <span className="stress">{this.props.info.total_like}</span>
+                      次赞
+                    </p>
+                    <p style={styles.fadeInUp2s}>
+                      发出
+                      <span className="stress">{this.props.info.total_cmt}</span>
+                      次评论
+                    </p>
+                    <p className="mt-35" style={styles.fadeInUp2s}>他们的名字，你应该很熟悉</p>
+                  </div>
+                ) : null}
+                
+              </div>
+            ) : this.props.page === 5 ? (
+              <div className="page">
+                <p style={styles.fadeInUp1s}>你的空间非常安静</p>
+                <p style={styles.fadeInUp1s}>没有人来点赞或评论</p>
+              </div>
+            ) : null}
           </div>
-        ) : null}
+        
       </StyleRoot>
     );
   }

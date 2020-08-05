@@ -23,10 +23,6 @@ class Slide extends Component {
     this.state = {
       page: 0,
     };
-    // 微信
-    document.addEventListener("WeixinJSBridgeReady", function () {
-      document.getElementById('audio_player').play();
-  },false);
   }
   handleClick() {
     // this.setState({ page: this.state.page + 1 });

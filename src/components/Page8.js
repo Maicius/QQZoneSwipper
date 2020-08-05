@@ -30,7 +30,7 @@ class Page1 extends Component {
     };
     return (
       <StyleRoot>
-        {this.props.page === 8 ? (
+        
           <div className="section page page-15">
           <div class="ground">
           <div class="clock-wrapper">
@@ -44,7 +44,7 @@ class Page1 extends Component {
           <div class="crowd crowd-5"></div>
           <div class="man"></div>
         </div>
-            
+        {this.props.page === 8 ? (
             <div className="content">
                   <p style={styles.fadeInUp2s}>
                    你在QQ上一共遇见了
@@ -53,18 +53,18 @@ class Page1 extends Component {
                   </p>
                   <p style={styles.fadeInUp2s}>
                     他们中有
-                    <span className="stress">{this.props.info.friend_num}</span>
+                    <span className="stress">{this.props.info.cmt_friend_num}</span>
                     人
                   </p>
                   <p style={styles.fadeInUp2s}>
                     与你在评论区互动超过
-                    <span className="stress">{this.props.info.friend_num}</span>
+                    <span className="stress">{this.props.info.cmt_msg_num}</span>
                     次
                   </p>
 
                   <p style={styles.fadeInUp2s}>
                     也有
-                    <span className="stress">{this.props.info.friend_num}</span>
+                    <span className="stress">{this.props.info.like_friend_num}</span>
                     个小伙伴
                   </p>
                   <p style={styles.fadeInUp2s}>
@@ -72,8 +72,9 @@ class Page1 extends Component {
                   </p>
                   
             </div>
+            ) : null}
           </div>
-        ) : null}
+ 
       </StyleRoot>
     );
   }

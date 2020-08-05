@@ -30,7 +30,7 @@ class Page4 extends Component {
     };
     return (
       <StyleRoot>
-        {this.props.info.most_date !== '' && this.props.page === 4 ? (
+       
           <div className="section page page-5">
             <div className="mountain mountain-1"></div>
             <div className="mountain mountain-2"></div>
@@ -47,6 +47,7 @@ class Page4 extends Component {
                 <div className="man"></div>
               </div>
             </div>
+            {this.props.info.most_date !== '' && this.props.page === 4 ? (
             <div className="content">
               <p style={styles.fadeInUp1s} className="stress">
                 {this.props.info.most_date}
@@ -66,14 +67,15 @@ class Page4 extends Component {
                   条评论
                 </p>
             </div>
+            ) : this.props.page === 4 ? (
+              <div className="page">
+              <Day/>
+                <p style={styles.fadeInUp1s}>你没有什么特别的一天</p>
+                <p style={styles.fadeInUp1s}>你的每天都一样精彩</p>
+              </div>
+            ) : null}
           </div>
-        ) : this.props.page === 4 ? (
-          <div className="page">
-          <Day/>
-            <p style={styles.fadeInUp1s}>你没有什么特别的一天</p>
-            <p style={styles.fadeInUp1s}>你的每天都一样精彩</p>
-          </div>
-        ) : null}
+        
       </StyleRoot>
     );
   }

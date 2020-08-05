@@ -35,7 +35,7 @@ class Page6 extends Component {
 
     return (
       <StyleRoot>
-        {this.props.page === 6 && this.props.info.total_cmt > 0? (
+       
             <div className="section page page-7">
               <div className="mountain mountain-1"></div>
               <div className="mountain mountain-2">
@@ -51,6 +51,7 @@ class Page6 extends Component {
                 <div className="light light-2"></div>
                 <div className="sun"></div>
               </div>
+              {this.props.page === 6 ? (
               <div className="content">
                 {
                   this.props.info.most_common_friend_num > 0 ? (
@@ -60,7 +61,7 @@ class Page6 extends Component {
                     </div>)
                   : (
                     <div>
-                      <p className="para">你的QQ好友都很分散</p>
+                      <p className="para">你的QQ好友比较分散</p>
                       <p className="para">都没有人和你有共同好友</p>
                     </div>
                   )
@@ -74,8 +75,9 @@ class Page6 extends Component {
                   ) : null
                 }
               </div>
+               ) : null}
           </div>
-        ) : null}
+       
       </StyleRoot>
     );
   }

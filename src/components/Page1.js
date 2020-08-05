@@ -30,7 +30,7 @@ class Page1 extends Component {
   render() {
     return (
       <div>
-        {this.props.page === 1 ? (
+
           <div className="bg-back">
             <div className="bg-white"></div>
             <div className="title-wrapper">
@@ -41,7 +41,6 @@ class Page1 extends Component {
                   <a className="button" onClick={this.props.handleClick}> <span dangerouslySetInnerHTML={{__html: this.state.text}}></span></a>
               <div className="card"></div>
           </div>
-        ) : null}
       </div>
     );
   }

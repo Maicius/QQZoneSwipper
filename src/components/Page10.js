@@ -30,7 +30,7 @@ class Page1 extends Component {
     };
     return (
       <StyleRoot>
-        {this.props.info.mostLanguage.name !== '' && this.props.page === 10 ? (
+
            <section className="section page page-15 page-14">
             <div class="light light-1"></div>
             <div class="light light-2"></div>
@@ -49,7 +49,6 @@ class Page1 extends Component {
               </div>
             </div>
            </section>
-        ) : null}
       </StyleRoot>
     );
   }

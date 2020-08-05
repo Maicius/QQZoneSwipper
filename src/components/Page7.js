@@ -35,9 +35,8 @@ class Page7 extends Component {
     };
     return (
       <StyleRoot>
-        {this.props.page === 7 ? (
+        
           <div className="section page page-8">
-
               <div className="echart_dom_top">
                     <ReactEcharts
                       option={getWordCloudOption(this.props.info.my_top_words)}
@@ -61,6 +60,7 @@ class Page7 extends Component {
                 <div class="roll"></div>
                 <div class="man"></div>
               </div>
+              {this.props.page === 7 ? (
               <div className="content">
                   <p style={styles.fadeInUp2s}>
                     你总是喜欢说
@@ -72,8 +72,9 @@ class Page7 extends Component {
                     <i className="fa fa-arrow-down"> </i>
                   </p>
               </div>
+              ) : null}
             </div>
-        ) : null}
+
       </StyleRoot>
     );
   }

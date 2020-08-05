@@ -7978,7 +7978,7 @@
   
   .page-14 .light {
     position: absolute;
-    top: -30px;
+    /* top: -30px; */
     left: -32px;
     -webkit-transform-origin: 79px 22px 0;
         -ms-transform-origin: 79px 22px 0;
