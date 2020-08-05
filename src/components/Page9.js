@@ -30,25 +30,44 @@ class Page1 extends Component {
     };
     return (
       <StyleRoot>
-        {this.props.info.forget.language !== '' && this.props.page === 9 ? (
-          <div className="page">
-          <Language className="mb20"/>
-            <p style={styles.fadeInUp1s}>还记得</p>
-            <p style={styles.fadeInUp1_5s}>世界上最好的语言</p>
-            <p style={styles.fadeInUp2s}>
-              <span className="stress">{this.props.info.forget.language}</span>吗
-            </p>
-            <p style={styles.fadeInUp2_5s}>你曾经很喜欢</p>
-            <p style={styles.fadeInUp3s}>但最近似乎把它遗忘了</p>
-          </div>
-        ) : this.props.page === 9 ? (
-          <div className="page">
-          <Language className="mb20"/>
-            <p style={styles.fadeInUp1s}>世界上最好的语言</p>
-            <p style={styles.fadeInUp1_5s}>引起了无数硝烟</p>
-            <p style={styles.fadeInUp2s}>但你岿然不动</p>
-          </div>
-        ) : null}
+        {this.props.page === 9 ?     
+        <section class="section page page-10">
+          <div class="water"></div>
+            <div class="ripple">
+              <div class="bottle-wrapper">
+                <div class="bottle bottle-1">
+                  <div class="man"></div>
+                </div>
+                <div class="bottle bottle-2"></div>
+              </div>
+            </div>
+            <div class="rain">
+              <div class="drop drop-1"></div>
+              <div class="drop drop-2"></div>
+              <div class="drop drop-3"></div>
+            </div>
+        <div className="content">
+              <p style={styles.fadeInUp1s}>但是</p>
+              <p style={styles.fadeInUp1s}>你注意到了吗</p>
+              <p style={styles.fadeInUp1s} className="mb20"></p>
+              <p style={styles.fadeInUp2s}>
+                   有
+                   <span className="stress">{this.props.info.friend_num}</span>
+                   个曾经很活跃的小伙伴
+              </p>
+              <p style={styles.fadeInUp2s}>
+                近一年没有在你的空间出现了
+                </p>
+                <p style={styles.fadeInUp2s}>
+                或许，相濡以沫
+                </p>
+                <p style={styles.fadeInUp2s}>
+                不如相忘于江湖...
+                </p>
+
+        </div>
+        <div class="tips">欸，有彩蛋吗？滑动看下~</div>
+    </section> : null}
       </StyleRoot>
     );
   }

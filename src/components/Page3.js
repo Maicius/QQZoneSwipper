@@ -31,18 +31,25 @@ class Page3 extends Component {
     return (
       <StyleRoot>
         {this.props.page === 3 ? (
-          <div className="section page page-4">
-            <div className="wave1 wave1-1">
-              <div className="ripple"></div>
-            </div>
-            <div className="wave1 wave1-2"></div>
-            <div className="wave2 wave2-1"></div>
-            <div className="wave2 wave2-2"></div>
-            <div className="circle"></div>
-            <div className="man-wrapper">
-              <div className="splash"></div>
-              <div className="man"></div>
-            </div>
+          <div className="section page page-13">
+            <div class="bottom"></div>
+      <div class="glass glass-1">
+        <div class="s">
+          <div class="c"></div>
+        </div>
+      </div>
+      <div class="glass glass-2">
+        <div class="s">
+          <div class="c"></div>
+        </div>
+      </div>
+      <div class="glass glass-3">
+        <div class="sand sand-1"></div>
+        <div class="sand sand-2"></div>
+        <div class="sand sand-3"></div>
+        <div class="man"></div>
+      </div>
+      <div class="line"></div>
             <div className="content">
               <p style={styles.fadeInUp1s}>{this.props.info.years}年来</p>
               <p style={styles.fadeInUp1s} className="mb20">
@@ -74,19 +81,11 @@ class Page3 extends Component {
               ) : (
                 <p style={styles.fadeInUp2s}>没有上传过照片</p>
               )}
-              {this.props.info.friend_num !== 0 ? (
-                <p style={styles.fadeInUp2s}>
-                  添加了
-                  <span className="stress">{this.props.info.friend_num}</span>
-                  位好友
-                </p>
-              ) : (
-                <p style={styles.fadeInUp2s}>没有添加好友</p>
-              )}
-              {this.props.info.mood_num === 0 && this.props.info.rz_num === 0 && this.props.info.photo_num ===0  ? (
+
+              {this.props.info.mood_num === 0 && this.props.info.rz_num === 0 && this.props.info.photo_num === 0  ? (
               <p style={styles.fadeInUp2s}>你莫不是个小号吧</p>
               ) : (
-                <p style={styles.fadeInUp2s}>这里记录着你成长的点点滴滴</p>
+                <p style={styles.fadeInUp2s}>点点滴滴，都是你成长的足迹</p>
               )}
             </div>
           </div>

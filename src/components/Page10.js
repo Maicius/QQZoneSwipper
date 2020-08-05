@@ -31,28 +31,24 @@ class Page1 extends Component {
     return (
       <StyleRoot>
         {this.props.info.mostLanguage.name !== '' && this.props.page === 10 ? (
-          <div className="page">
-          <Prize className="mb20"/>
-            <p style={styles.fadeInUp1s}>
-              你的年度语言是<span className="stress">{this.props.info.mostLanguage.name}</span>
-            </p>
-            <p style={styles.fadeInUp1_5s}>一年中</p>
-            <p style={styles.fadeInUp2s}>
-              你向<span className="stress">{this.props.info.mostLanguage.repoNums}</span>个{this.props.info.mostLanguage.name}
-              仓库
-            </p>
-            <p style={styles.fadeInUp2_5s}>
-              提交了<span className="stress">{this.props.info.mostLanguage.commitNums}</span>次代码
-            </p>
-          </div>
-        ) : this.props.page === 10 ? (
-          <div className="page">
-          <Prize className="mb20"/>
-            <p style={styles.fadeInUp1s}>本年度</p>
-            <p style={styles.fadeInUp1_5s}>所有的编程语言</p>
-            <p style={styles.fadeInUp2s}>在你面前</p>
-            <p style={styles.fadeInUp2_5s}>都已自惭形秽</p>
-          </div>
+          
+           <section className="section page page-15 page-14">
+            <div class="light light-1"></div>
+            <div class="light light-2"></div>
+             <div class="arrow"></div>
+             <div className="content mt-65">
+              <p style={styles.fadeInUp1s}>本项目纯属娱乐</p>
+              <p style={styles.fadeInUp1s}>如您喜欢</p>
+              <p style={styles.fadeInUp1s}>欢迎分享</p>
+              
+              <div class="buttons">
+                  <a href="http://app.xiaomaidong.com" target="_blank" className="button">返回网站首页</a>
+                  <a href="https://github.com/Maicius/QQZoneMood" target="_blank" className="button">查看项目文档/源码 </a>
+                  <a href="http://www.xiaomaidong.com" target="_blank" className="button">查看更多好玩的东西</a>
+                 {/* <a href="http://www.xiaomaidong.com" class="button">访问小麦冬</a> */}
+              </div>
+            </div>
+           </section>
         ) : null}
       </StyleRoot>
     );

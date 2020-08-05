@@ -8,7 +8,6 @@ import './Page1.css';
 class Page1 extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       arrow: false,
       text: "立即<br/>查看"
@@ -27,7 +26,7 @@ class Page1 extends Component {
   componentWillUnmount() {
     this.timer && clearTimeout(this.timer);
   }
-  
+
   render() {
     return (
       <div>
@@ -39,7 +38,7 @@ class Page1 extends Component {
               <h1 className="title title-2"></h1>
             </div>
               <div className="nickname">{this.props.info.nickname}</div>
-                  <a className="button"> <span dangerouslySetInnerHTML={{__html: this.state.text}}></span></a>
+                  <a className="button" onClick={this.props.handleClick}> <span dangerouslySetInnerHTML={{__html: this.state.text}}></span></a>
               <div className="card"></div>
           </div>
         ) : null}

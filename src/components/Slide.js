@@ -15,13 +15,11 @@ import Page7 from './Page7';
 import Page8 from './Page8';
 import Page9 from './Page9';
 import Page10 from './Page10';
-import Page11 from './Page11';
-import Page12 from './Page12';
 
 class Slide extends Component {
   constructor(props) {
     super(props);
-
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
       page: 0,
     };
@@ -29,6 +27,9 @@ class Slide extends Component {
     document.addEventListener("WeixinJSBridgeReady", function () {
       document.getElementById('audio_player').play();
   },false);
+  }
+  handleClick() {
+    // this.setState({ page: this.state.page + 1 });
   }
 
   render() {
@@ -52,12 +53,12 @@ class Slide extends Component {
     };
     const styles = {
       section1: {
-        background: `url(./back.jpg) no-repeat top center`,
-        backgroundSize: 'cover',
+        // background: `url(./back.jpg) no-repeat top center`,
+        // backgroundSize: 'cover',
       },
       section: {
-        background: `url(./back.jpg) no-repeat top center`,
-        backgroundSize: 'cover',
+        // background: `url(./back.jpg) no-repeat top center`,
+        // backgroundSize: 'cover',
       },
       fadeInUp1s: {
         animation: 'x 1s',
@@ -88,7 +89,7 @@ class Slide extends Component {
           </audio> */}
           <Swiper {...params}>
             <section className="section page page-1 page-home">
-              <Page1 page={this.state.page} info={this.props.info}/>
+              <Page1 page={this.state.page} info={this.props.info} handleClick={this.handleClick}/>
             </section>
             <section>
               <Page2 page={this.state.page} info={this.props.info} />
@@ -116,12 +117,6 @@ class Slide extends Component {
             </section>
             <section style={styles.section}>
               <Page10 page={this.state.page} info={this.props.info} />
-            </section>
-            <section style={styles.section}>
-              <Page11 page={this.state.page} info={this.props.info} />
-            </section>
-            <section style={styles.section}>
-              <Page12 page={this.state.page} info={this.props.info} octokit={this.props.octokit} />
             </section>
           </Swiper>
         </StyleRoot>

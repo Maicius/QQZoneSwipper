@@ -53,7 +53,12 @@ class Page2 extends Component {
             <div className="building building-1"></div>
             <div className="content">
               
-              <p style={styles.fadeInUp1s} className="para mt-10"><p className="stress fs-18">{this.props.info.first_time}</p>你第一次登陆了QQ空间</p>
+              <p style={styles.fadeInUp1s} className="para mt-10 stress fs-18">
+              {this.props.info.first_time}
+                </p>
+              <p style={styles.fadeInUp1s} className="para mt-10">
+               你第一次登陆了QQ空间
+                </p>
               {this.props.info.first_mood_time !== "" ? (
                 <p style={styles.fadeInUp2s} className="para mt-35">
                   <p className="stress fs-18">{this.props.info.first_mood_time}</p>

@@ -31,31 +31,46 @@ class Page1 extends Component {
     return (
       <StyleRoot>
         {this.props.page === 8 ? (
-          <div className="section page page-9">
-            <div className="bottom"></div>
-            <div className="calendar-wrapper">
-              <div className="calendar"></div>
-              <div className="man"></div>
-            </div>
-            <div className="leaves-wrapper"></div>
+          <div className="section page page-15">
+          <div class="ground">
+          <div class="clock-wrapper">
+            <div class="min"></div>
+            <div class="hour"></div>
+          </div>
+          <div class="crowd crowd-1"></div>
+          <div class="crowd crowd-2"></div>
+          <div class="crowd crowd-3"></div>
+          <div class="crowd crowd-4"></div>
+          <div class="crowd crowd-5"></div>
+          <div class="man"></div>
+        </div>
+            
             <div className="content">
                   <p style={styles.fadeInUp2s}>
-                  你注意到了吗
-                    </p>
-                  <p style={styles.fadeInUp2s}>
-                    有
-                    <span className="stress">{this.props.info.stranger_ratio}</span>
-                    的好友
+                   你在QQ上一共遇见了
+                    <span className="stress">{this.props.info.friend_num}</span>
+                    个小伙伴
                   </p>
                   <p style={styles.fadeInUp2s}>
-                    近一年没有出现在你的空间了
+                    他们中有
+                    <span className="stress">{this.props.info.friend_num}</span>
+                    人
                   </p>
                   <p style={styles.fadeInUp2s}>
-                    很多朋友
+                    与你在评论区互动超过
+                    <span className="stress">{this.props.info.friend_num}</span>
+                    次
+                  </p>
+
+                  <p style={styles.fadeInUp2s}>
+                    也有
+                    <span className="stress">{this.props.info.friend_num}</span>
+                    个小伙伴
                   </p>
                   <p style={styles.fadeInUp2s}>
-                    都注定只是人生的匆匆过客
+                  一直在默默给你点赞
                   </p>
+                  
             </div>
           </div>
         ) : null}

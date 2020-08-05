@@ -102,13 +102,14 @@ class Page5 extends Component {
               {this.props.info.total_like !== 0 ? (
                 <div>
                   <p style={styles.fadeInUp2s}>
-                    你的动态累计收到了
+                    你的朋友们为你点了
                   </p>
                   <p style={styles.fadeInUp2s} className="mt-35">
                     <span className="stress">{this.props.info.total_like}</span>
-                    个赞
+                    次赞
                   </p>
                   <p style={styles.fadeInUp2s}>
+                    发出
                     <span className="stress">{this.props.info.total_cmt}</span>
                     次评论
                   </p>

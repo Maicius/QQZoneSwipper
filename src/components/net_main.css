@@ -5684,7 +5684,7 @@
   }
   
   @-webkit-keyframes crowd {
-    0% {
+    0% {  
       opacity: 0;
     }
     100% {
@@ -5927,7 +5927,8 @@
     right: 30px;
     width: 36px;
     height: 341px;
-    background: url("http://s3.music.126.net/nact/s/client/images/year2017/cover/title_2.png?593a6c108789e24a36b991c158126bcf") no-repeat;
+    /* background: url("http://s3.music.126.net/nact/s/client/images/year2017/cover/title_2.png?593a6c108789e24a36b991c158126bcf") no-repeat; */
+    background: url("qq_title.png") no-repeat;
     background-size: 100% 100%;
   }
   
@@ -6005,7 +6006,8 @@
     left: 100px;
     width: 61px;
     height: 122px;
-    background: url("http://s3.music.126.net/nact/s/client/images/year2017/cover/card_front.jpg?cafc1dd6b435974ddac2189259bcf009") no-repeat;
+    /* background: url("http://s3.music.126.net/nact/s/client/images/year2017/cover/card_front.jpg?cafc1dd6b435974ddac2189259bcf009") no-repeat; */
+    background: url("./card_front.png");
     background-size: cover;
     -webkit-box-shadow: rgba(0, 0, 0, 0.298) -15px 10px 10px;
             box-shadow: rgba(0, 0, 0, 0.298) -15px 10px 10px;
@@ -8328,7 +8330,7 @@
             box-sizing: border-box;
   }
   
-  .page-15 .tips {
+  .page-10 .tips {
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -8338,7 +8340,7 @@
     color: rgba(0, 0, 0, 0.701961);
   }
   
-  .page-15 .tips::before {
+  .page-10 .tips::before {
     position: absolute;
     top: -15px;
     left: 50%;
@@ -8457,18 +8459,18 @@
     background-size: cover;
   }
   
-  .page-16 .buttons {
+  .page-15 .buttons {
     position: absolute;
-    top: 75%;
+    margin: 30px auto;
     width: 100%;
   }
   
-  .page-16 .button {
+  .page-15 .button {
     display: block;
     width: 216px;
     height: 38px;
     line-height: 38px;
-    margin: 0 auto;
+    margin: 10px auto;
     border: 1px solid rgb(223, 77, 61);
     border-radius: 38px;
     font-size: 15px;
