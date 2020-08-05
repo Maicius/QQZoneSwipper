@@ -31,7 +31,6 @@ class Page1 extends Component {
     return (
       <StyleRoot>
         {this.props.info.mostLanguage.name !== '' && this.props.page === 10 ? (
-          
            <section className="section page page-15 page-14">
             <div class="light light-1"></div>
             <div class="light light-2"></div>
@@ -40,7 +39,8 @@ class Page1 extends Component {
               <p style={styles.fadeInUp1s}>本项目纯属娱乐</p>
               <p style={styles.fadeInUp1s}>如您喜欢</p>
               <p style={styles.fadeInUp1s}>欢迎分享</p>
-              
+              <div className="qrcode">
+                </div>
               <div class="buttons">
                   <a href="http://app.xiaomaidong.com" target="_blank" className="button">返回网站首页</a>
                   <a href="https://github.com/Maicius/QQZoneMood" target="_blank" className="button">查看项目文档/源码 </a>

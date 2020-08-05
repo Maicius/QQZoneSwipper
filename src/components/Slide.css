@@ -21,3 +21,11 @@ p {
     margin: 0;
     margin-top: 65px;
 }
+
+.qrcode {
+    background: url("./xiaomaidong.png") no-repeat;
+    margin: 10px auto;
+    width: 84px;
+    height: 84px;
+    background-size: cover;
+}
