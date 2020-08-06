@@ -63,7 +63,7 @@ class Page7 extends Component {
                 这一天你睡得很晚
                   </p>
                 <p style={styles.fadeInUp1s}>
-                {this.props.info.early_mood_time} 点过了你还在和朋友们在评论区侃侃而谈
+                {this.props.info.early_mood_time} 点过了你还和朋友们在评论区侃侃而谈
                 </p>
                 <p style={styles.fadeInUp2s}>
                 你说：“{this.props.info.early_mood_content}”

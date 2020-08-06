@@ -33,7 +33,6 @@ class Page1 extends Component {
             <div class="light light-1"></div>
             <div class="light light-2"></div>
              <div class="arrow"></div>
-             {this.props.page === 10 ? (
              <div className="content mt-65" >
               <p style={styles.fadeInUp1s}>本项目纯属娱乐</p>
               <p style={styles.fadeInUp1s}>数据可能存在误差</p>
@@ -42,13 +41,12 @@ class Page1 extends Component {
               <div className="qrcode" style={styles.fadeInUp2s}>
               </div>
               <div class="buttons" style={styles.fadeInUp3s}>
-                  <a href="http://app.xiaomaidong.com" target="_blank" rel="noopener noreferrer"  className="button">返回网站首页</a>
-                  <a href="https://github.com/Maicius/QQZoneMood" rel="noopener noreferrer" target="_blank" className="button">查看项目文档/源码 </a>
+                  <a href="http://app.xiaomaidong.com" target="_blank" rel="noopener noreferrer" className="button">返回网站首页</a>
+                  <a href="https://github.com/Maicius/QQZoneMood" target="_blank" rel="noopener noreferrer" className="button">查看项目文档/源码 </a>
                   <a href="http://www.xiaomaidong.com" target="_blank" rel="noopener noreferrer" className="button">查看更多好玩的东西</a>
                  {/* <a href="http://www.xiaomaidong.com" class="button">访问小麦冬</a> */}
               </div>
-            </div> ) : null }
-             
+            </div>
            </section>
       </StyleRoot>
     );

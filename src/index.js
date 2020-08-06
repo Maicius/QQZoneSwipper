@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Page10 from './components/Page10';
+import DefaultPage from './components/DefaultPage';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router , Route} from 'react-router-dom';
 
@@ -11,7 +11,7 @@ ReactDOM.render(
     <Router>
         <div>
             <Route path="/data/userinfo/:QQ/:name/:password" component={App} />
-            <Route exact path = "/" component={Page10}/>
+            <Route exact path = "/" component={DefaultPage}/>
         </div>
     </Router>,
     document.getElementById('root')
