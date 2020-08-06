@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { fadeInUp } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import './Slide.css';
-import { ReactComponent as Day } from '../icon/day.svg';
 
 class Page4 extends Component {
   render() {
@@ -77,7 +76,6 @@ class Page4 extends Component {
             </div>
             ) : this.props.page === 4 ? (
               <div className="page">
-              <Day/>
                 <p style={styles.fadeInUp1s}>你没有什么特别的一天</p>
                 <p style={styles.fadeInUp1s}>你的每天都一样精彩</p>
               </div>

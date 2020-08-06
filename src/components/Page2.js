@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { fadeInUp } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import './Slide.css';
-import { ReactComponent as Repo } from '../icon/repo.svg';
 
 class Page2 extends Component {
   render() {
@@ -60,17 +59,17 @@ class Page2 extends Component {
                你第一次登陆了QQ空间
                 </p>
               {this.props.info.first_mood_time !== "" ? (
-                <p style={styles.fadeInUp2s} className="para mt-35">
+                <div style={styles.fadeInUp2s} className="para mt-35">
                   <p className="stress fs-18">{this.props.info.first_mood_time}</p>
                   你发出了第一条动态
-                </p>
+                </div>
               ) : null}
               {this.props.info.first_friend_time !== "" ? (
-                <p style={styles.fadeInUp2s} className="para mt-35">
+                <div style={styles.fadeInUp2s} className="para mt-35">
                   <p className="stress fs-18">{this.props.info.first_friend_time}</p>
                   你添加了第一位好友
                   <span className="stress fs-18">{this.props.info.first_friend}</span>
-                </p>
+                </div>
               ) : null} 
             </div>
           ) : null}

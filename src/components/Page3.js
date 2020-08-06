@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { fadeInUp } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import './Slide.css';
-import { ReactComponent as Line } from '../icon/line.svg';
 
 class Page3 extends Component {
   render() {

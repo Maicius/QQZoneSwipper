@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import { fadeInUp } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import './Slide.css';
-import { ReactComponent as Time } from '../icon/time.svg';
-import {getWordCloudOption} from '../utils/helper';
-import ReactEcharts from 'echarts-for-react';
-import FontAwesomeIcon from '@fortawesome/fontawesome'
-import { faArrowRight } from '@fortawesome/fontawesome-free-solid'
 require('echarts-wordcloud');
 
 class Page7 extends Component {
@@ -74,7 +69,7 @@ class Page7 extends Component {
                 你说：“{this.props.info.early_mood_content}”
                   </p>
                 {
-                  this.props.info.early_mood_friend != '' ? (
+                  this.props.info.early_mood_friend !== '' ? (
                     <div>
                       <p style={styles.fadeInUp3s}>
                         {this.props.info.early_mood_friend}说：“{this.props.info.early_mood_cmt}”

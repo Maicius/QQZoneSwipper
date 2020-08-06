@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { fadeInUp } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import './Slide.css';
-import { ReactComponent as Moon } from '../icon/moon.svg';
-import { ReactComponent as Line } from '../icon/line.svg';
 import {getWordCloudOption} from '../utils/helper';
 import ReactEcharts from 'echarts-for-react';
 require('echarts-wordcloud');

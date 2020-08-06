@@ -6,9 +6,7 @@ import {
 } from './utils/constant';
 
 import Alert from 'antd/lib/alert';
-import Button from 'antd/lib/button';
 import Spin from 'antd/lib/spin';
-import { ReactComponent as GitHub } from './icon/githubWhite.svg';
 import Slide from './components/Slide';
 import {axiosJSON} from './utils/helper'
 class App extends Component {

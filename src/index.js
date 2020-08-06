@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import Page10 from './components/Page10';
 import * as serviceWorker from './serviceWorker';
-import {Redirect, BrowserRouter as Router , Route} from 'react-router-dom';
+import { BrowserRouter as Router , Route} from 'react-router-dom';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(

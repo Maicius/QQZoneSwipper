@@ -1,4 +1,3 @@
-import ReactEcharts from "echarts-for-react";
 require('echarts-wordcloud');
 
 class Picture {
