@@ -64,7 +64,7 @@ class Page3 extends Component {
                 ) : (
                   <p style={styles.fadeInUp2s}>没有发过说说</p>
                 )}
-                {this.props.info.rz_num !== 0 ? (
+                {/* {this.props.info.rz_num !== 0 ? (
                   <p style={styles.fadeInUp2s}>
                     写了
                     <span className="stress">{this.props.info.rz_num}</span>
@@ -72,7 +72,7 @@ class Page3 extends Component {
                   </p>
                 ) : (
                   <p style={styles.fadeInUp2s}>没有写过日志</p>
-                )}
+                )} */}
                 {this.props.info.photo_num !== 0 ? (
                   <p style={styles.fadeInUp2s}>
                     上传了
@@ -81,6 +81,13 @@ class Page3 extends Component {
                   </p>
                 ) : (
                   <p style={styles.fadeInUp2s}>没有上传过照片</p>
+                )}
+                {this.props.info.total_word_num !== 0  (
+                  <p style={styles.fadeInUp2s}>
+                    累计超过了
+                    <span className="stress">{this.props.info.total_word_num}</span>
+                    字
+                  </p>
                 )}
                 {this.props.info.mood_num === 0 && this.props.info.rz_num === 0 && this.props.info.photo_num === 0  ? (
                 <p style={styles.fadeInUp2s}>你莫不是个小号吧</p>

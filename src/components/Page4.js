@@ -55,17 +55,25 @@ class Page4 extends Component {
                 <p style={styles.fadeInUp1_5s} className="mb20">
                   大概是很特别的一天
                 </p>
-                <p style={styles.fadeInUp2s}>这一天里，你收获了好友们最多的祝福</p>
-                <p style={styles.fadeInUp2_5s}>
+                <p style={styles.fadeInUp2s}>这一天里，你吸引了好友们最多的目光</p>
+                <p style={styles.fadeInUp1_5s}>
+                  大家戳了你
+                  <span className="stress">{this.props.info.most_date_prd}</span>
+                  次
+                </p>
+                <p style={styles.fadeInUp1_5s}>
                   大家给你点了
                   <span className="stress">{this.props.info.most_date_like}</span>
-                  次赞
+                  个赞
                 </p>
-                <p style={styles.fadeInUp3s}>
+                <p style={styles.fadeInUp1_5s}>
                   发出了
                   <span className="stress">{this.props.info.most_date_cmt}</span>
                   条评论
                 </p>
+                <p style={styles.fadeInUp3s}>
+                    “{this.props.info.most_date_content}”
+                  </p>
             </div>
             ) : this.props.page === 4 ? (
               <div className="page">

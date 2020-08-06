@@ -35,9 +35,8 @@ class Page7 extends Component {
     };
     return (
       <StyleRoot>
-        
           <div className="section page page-8">
-              <div className="echart_dom_top">
+              {/* <div className="echart_dom_top">
                     <ReactEcharts
                       option={getWordCloudOption(this.props.info.my_top_words)}
                       notMerge={true}
@@ -54,7 +53,7 @@ class Page7 extends Component {
                       theme={"theme_name"}
                       onChartReady={this.onChartReadyCallback}
                       />
-              </div>
+              </div> */}
               <div class="bottom"></div>
               <div class="disc">
                 <div class="roll"></div>
@@ -62,14 +61,18 @@ class Page7 extends Component {
               </div>
               {this.props.page === 7 ? (
               <div className="content">
-                  <p style={styles.fadeInUp2s}>
-                    你总是喜欢说
-                    <i className="fa fa-arrow-right"> </i>
-                  </p>
- 
-                  <p style={styles.fadeInUp2s} className="mt-65">
-                    而你的朋友们总是喜欢对你说
-                    <i className="fa fa-arrow-down"> </i>
+                <p style={styles.fadeInUp1s} className="para mt-10 stress fs-18">
+                {this.props.info.early_mood_date}
+                这一天你睡得很晚
+                </p>
+                <p style={styles.fadeInUp1s}>
+                {this.props.info.early_mood_time} 点过了你还在刷空间
+                </p>
+                <p style={styles.fadeInUp1s}>
+                  你还在说：
+                </p>
+                <p style={styles.fadeInUp1_5s}>
+                    “{this.props.info.early_mood_content}”
                   </p>
               </div>
               ) : null}
