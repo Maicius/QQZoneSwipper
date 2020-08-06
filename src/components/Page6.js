@@ -52,7 +52,7 @@ class Page6 extends Component {
                 <div className="sun"></div>
               </div>
               {this.props.page === 6 ? (
-              <div className="content">
+              <div className="content" style={styles.fadeInUp2s}>
                 {
                   this.props.info.most_common_friend_num > 0 ? (
                     <div>
@@ -69,8 +69,8 @@ class Page6 extends Component {
                 {
                   this.props.info.most_group_member > 0 ? (
                     <div>
-                         <p className="para para-15">你一定经常在<span className="stress fs-18">{this.props.info.most_group}</span>群里混</p>
-                          <p className="para para-15">因为你在这里添加了<span className="stress">{this.props.info.most_group_member}</span>位好友</p>
+                         <p className="para para-15">你一定经常在<span className="stress fs-18">{this.props.info.most_group}</span>群里水吧</p>
+                          <p className="para para-15">你在这里添加了<span className="stress">{this.props.info.most_group_member}</span>位志同道合的小伙伴</p>
                     </div>
                   ) : null
                 }

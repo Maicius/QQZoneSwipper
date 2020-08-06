@@ -47,7 +47,7 @@ class Page1 extends Component {
         {this.props.page === 8 ? (
             <div className="content">
                   <p style={styles.fadeInUp2s}>
-                   你在QQ上一共遇见了
+                   你在QQ上遇见了超过
                     <span className="stress">{this.props.info.friend_num}</span>
                     个小伙伴
                   </p>

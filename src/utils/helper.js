@@ -80,15 +80,15 @@ export const getWordCloudOption = (data) => {
       series: [{
           type: 'wordCloud',
           gridSize: 1,
-          sizeRange: [12, 55],
+          sizeRange: [12, 35],
           rotationRange: [-45, 0, 45, 90],
           textStyle: {
               normal: {
                   color: function() {
                       return 'rgb(' +
-                              Math.round(Math.random() * 255) +
-                              ', ' + Math.round(Math.random() * 255) +
-                              ', ' + Math.round(Math.random() * 255) + ')'
+                              Math.round(Math.random() * 233) +
+                              ', ' + Math.round(Math.random() * 150) +
+                              ', ' + Math.round(Math.random() * 200) + ')'
                   }
               }
           },

@@ -108,24 +108,24 @@ class Page5 extends Component {
                     <p style={styles.fadeInUp1s}>
                       小伙伴们坚持不懈的
                     </p>
-                    <p style={styles.fadeInUp2s} className="mt-35">
+                    <p style={styles.fadeInUp1s}>
                      给你点赞
                       <span className="stress">{this.props.info.total_like_num}</span>
                       次
                     </p>
-                    <p style={styles.fadeInUp2s}>
+                    <p style={styles.fadeInUp1s}>
                       以及评论
                       <span className="stress">{this.props.info.total_cmt_num}</span>
                       次
                     </p>
                     {this.props.info.avg_like_num >= 2 ? (
-                      <p style={styles.fadeInUp2s}>
+                      <p style={styles.fadeInUp1s}>
                       平均每条说说就有点赞
                         <span className="stress">{this.props.info.avg_like_num}</span>
                         次
                       </p>
                       ) : null} 
-                    <p className="mt-35" style={styles.fadeInUp2s}>他们的名字，你应该很熟悉</p>
+                    <p style={styles.fadeInUp1s}>他们的名字，你应该很熟悉</p>
                   </div>
                   
                 ) : null}

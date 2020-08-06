@@ -49,3 +49,6 @@
       opacity:1; /*透明度为1*/
   }
 }
+.mood_content {
+  font-style: italic
+}

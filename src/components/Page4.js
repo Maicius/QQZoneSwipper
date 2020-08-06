@@ -62,7 +62,7 @@ class Page4 extends Component {
                   次
                 </p>
                 <p style={styles.fadeInUp1_5s}>
-                  大家给你点了
+                  给你点了
                   <span className="stress">{this.props.info.most_date_like}</span>
                   个赞
                 </p>
@@ -71,7 +71,7 @@ class Page4 extends Component {
                   <span className="stress">{this.props.info.most_date_cmt}</span>
                   条评论
                 </p>
-                <p style={styles.fadeInUp3s}>
+                <p style={styles.fadeInUp3s} className="mood_content">
                     “{this.props.info.most_date_content}”
                   </p>
             </div>
