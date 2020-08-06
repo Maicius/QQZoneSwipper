@@ -19,6 +19,8 @@
     "react-animations": "^1.0.0",
     "react-dom": "^16.7.0",
     "react-id-swiper": "^1.6.8",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.3",
     "typed.js": "^2.0.9"
   },

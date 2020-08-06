@@ -97,30 +97,42 @@ class Page5 extends Component {
               <div class="cat cat-2"></div>
               <div class="shadow"></div>
             </div>
-            {this.props.page === 5 && this.props.info.total_like > 0 ? (
+            {this.props.page === 5 && this.props.info.total_like_num > 0 ? (
               <div class="content">
                 
-                {this.props.info.total_like !== 0 ? (
+                {this.props.info.total_like_num !== 0 ? (
                   <div>
-                    <p style={styles.fadeInUp2s}>
-                      你的朋友们为你点了
+                    <p style={styles.fadeInUp1s}>
+                      这么多年来
+                    </p>
+                    <p style={styles.fadeInUp1s}>
+                      小伙伴们坚持不懈的
                     </p>
                     <p style={styles.fadeInUp2s} className="mt-35">
-                      <span className="stress">{this.props.info.total_like}</span>
-                      次赞
+                     给你点赞
+                      <span className="stress">{this.props.info.total_like_num}</span>
+                      次
                     </p>
                     <p style={styles.fadeInUp2s}>
-                      发出
-                      <span className="stress">{this.props.info.total_cmt}</span>
-                      次评论
+                      以及评论
+                      <span className="stress">{this.props.info.total_cmt_num}</span>
+                      次
                     </p>
+                    {this.props.info.avg_like_num >= 2 ? (
+                      <p style={styles.fadeInUp2s}>
+                      平均每条说说就有点赞
+                        <span className="stress">{this.props.info.avg_like_num}</span>
+                        次
+                      </p>
+                      ) : null} 
                     <p className="mt-35" style={styles.fadeInUp2s}>他们的名字，你应该很熟悉</p>
                   </div>
+                  
                 ) : null}
                 
               </div>
             ) : this.props.page === 5 ? (
-              <div className="page">
+              <div className="content">
                 <p style={styles.fadeInUp1s}>你的空间非常安静</p>
                 <p style={styles.fadeInUp1s}>没有人来点赞或评论</p>
               </div>

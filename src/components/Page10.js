@@ -30,13 +30,13 @@ class Page1 extends Component {
     };
     return (
       <StyleRoot>
-
            <section className="section page page-15 page-14">
             <div class="light light-1"></div>
             <div class="light light-2"></div>
              <div class="arrow"></div>
              <div className="content mt-65">
               <p style={styles.fadeInUp1s}>本项目纯属娱乐</p>
+              <p style={styles.fadeInUp1s}>数据可能存在误差</p>
               <p style={styles.fadeInUp1s}>如您喜欢</p>
               <p style={styles.fadeInUp1s}>欢迎分享</p>
               <div className="qrcode">

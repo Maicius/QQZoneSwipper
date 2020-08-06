@@ -57,9 +57,7 @@ class Page1 extends Component {
                     人
                   </p>
                   <p style={styles.fadeInUp2s}>
-                    与你在评论区互动超过
-                    <span className="stress">{this.props.info.cmt_msg_num}</span>
-                    次
+                    与你在评论区有过互动
                   </p>
 
                   <p style={styles.fadeInUp2s}>
