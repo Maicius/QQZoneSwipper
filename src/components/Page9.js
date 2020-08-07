@@ -50,7 +50,7 @@ class Page1 extends Component {
                   <p style={styles.fadeInUp1s}>但是</p>
                   <p style={styles.fadeInUp1s}>你注意到了吗</p>
                   <p style={styles.fadeInUp1s} className="mb20"></p>
-                  { this.info.props.non_activate_time < 1 ? (
+                  { this.props.non_activate_time < 1 ? (
                     <div>
                       <p style={styles.fadeInUp2s}>
                           有
