@@ -75,7 +75,7 @@ class Page4 extends Component {
                   </p>
             </div>
             ) : this.props.page === 4 ? (
-              <div className="page">
+              <div className="content">
                 <p style={styles.fadeInUp1s}>你没有什么特别的一天</p>
                 <p style={styles.fadeInUp1s}>你的每天都一样精彩</p>
               </div>
