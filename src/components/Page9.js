@@ -50,20 +50,39 @@ class Page1 extends Component {
                   <p style={styles.fadeInUp1s}>但是</p>
                   <p style={styles.fadeInUp1s}>你注意到了吗</p>
                   <p style={styles.fadeInUp1s} className="mb20"></p>
-                  <p style={styles.fadeInUp2s}>
-                      有
-                      <span className="stress">{this.props.info.non_activate_friend_num}</span>
-                      个曾经很活跃的小伙伴
-                  </p>
-                  <p style={styles.fadeInUp2s}>
-                    近一年没有在你的空间出现了
-                    </p>
-                    <p style={styles.fadeInUp2s}>
-                    或许，相濡以沫
-                    </p>
-                    <p style={styles.fadeInUp2s}>
-                    不如相忘于江湖...
-                    </p>
+                  { this.info.props.non_activate_time < 1 ? (
+                    <div>
+                      <p style={styles.fadeInUp2s}>
+                          有
+                          <span className="stress">{this.props.info.non_activate_friend_num}</span>
+                          个曾经很活跃的小伙伴
+                      </p>
+                      <p style={styles.fadeInUp2s}>
+                        近一年没有在你的空间出现了
+                        </p>
+                        <p style={styles.fadeInUp2s}>
+                        或许，相濡以沫
+                        </p>
+                        <p style={styles.fadeInUp2s}>
+                        不如相忘于江湖...
+                        </p>
+                    </div>) : 
+                      <div>
+                        <p style={styles.fadeInUp2s}>
+                          有超过
+                          <span className="stress">{this.props.info.non_activate_time}</span>
+                          年的时间
+                        </p>
+                        <p style={styles.fadeInUp2s}>
+                          你没有更新过动态了
+                        </p>
+                        <p style={styles.fadeInUp2s}>
+                          和列表上的朋友们，还有联系吗？
+                        </p>
+                      </div>
+
+                  }
+                  
             </div>
         : null}
         <div class="tips">欸，有彩蛋吗？滑动看下~</div>

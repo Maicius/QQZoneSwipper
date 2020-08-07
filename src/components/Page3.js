@@ -91,7 +91,7 @@ class Page3 extends Component {
                 {this.props.info.mood_num === 0 && this.props.info.rz_num === 0 && this.props.info.photo_num === 0  ? (
                 <p style={styles.fadeInUp2s}>你莫不是个小号吧</p>
                 ) : (
-                  <p style={styles.fadeInUp2s}>点点滴滴，都是你成长的足迹</p>
+                  <p style={styles.fadeInUp2s}>点点滴滴，仿佛都是青春的痕迹</p>
                 )}
             </div>
              ) : null}
