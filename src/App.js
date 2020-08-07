@@ -64,7 +64,7 @@ class App extends Component {
     let qq = this.props.match.params.QQ;
     let name = this.props.match.params.name;
     let password = this.props.match.params.password;
-    let url = "http://app.xiaomaidong.com/data/userinfo/" + qq + "/" + name + "/" + password
+    let url = "http://app.xiaomaidong/data/userinfo/" + qq + "/" + name + "/" + password
     axiosJSON.get(url).then((res) => {
       // that.setState({info: res.data.user});
       if (res.data.finish === 1) {
