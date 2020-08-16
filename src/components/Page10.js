@@ -46,7 +46,6 @@ class Page1 extends Component {
                   <a href="http://app.xiaomaidong.com" target="_blank" rel="noopener noreferrer"  className="button">返回网站首页</a>
                   <a href="https://github.com/Maicius/QQZoneMood" rel="noopener noreferrer" target="_blank" className="button">查看项目文档/源码 </a>
                   <a href="http://www.xiaomaidong.com" target="_blank" rel="noopener noreferrer" className="button">查看更多好玩的东西</a>
-                 {/* <a href="http://www.xiaomaidong.com" class="button">访问小麦冬</a> */}
               </div>
             </div> ) : null }
              
