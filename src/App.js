@@ -9,6 +9,7 @@ import Alert from 'antd/lib/alert';
 import Spin from 'antd/lib/spin';
 import Slide from './components/Slide';
 import {axiosJSON} from './utils/helper'
+import {SERVER_HOST} from './utils/constant'
 class App extends Component {
   constructor(props) {
     super(props);
@@ -64,7 +65,7 @@ class App extends Component {
     let qq = this.props.match.params.QQ;
     let name = this.props.match.params.name;
     let password = this.props.match.params.password;
-    let url = "http://app.xiaomaidong/data/userinfo/" + qq + "/" + name + "/" + password
+    let url = SERVER_HOST + qq + "/" + name + "/" + password
     axiosJSON.get(url).then((res) => {
       // that.setState({info: res.data.user});
       if (res.data.finish === 1) {

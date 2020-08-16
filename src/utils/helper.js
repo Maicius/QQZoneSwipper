@@ -64,7 +64,7 @@ export const timeout = (octokitPromise) => {
   return Promise.race([
     octokitPromise,
     new Promise(function(resolve, reject) {
-      setTimeout(() => reject(new Error('request timeout')), TIMEOUT);
+      setTimeout(() => reject(new Error('request timeout')), 6000);
     }),
   ]).catch((e)=>{
     console.log(octokitPromise)
