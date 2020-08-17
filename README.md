@@ -6,7 +6,7 @@
   </a>
 </p>
 
-中文文档 | [English Documentation](https://github.com/Maicius/QQZoneSwipper/blob/master/README-en.md)
+中文文档 | [English Documentation](https://github.com/KnowsCount/QQZoneSwipper/blob/master/README-en.md)
 
 ---
 
