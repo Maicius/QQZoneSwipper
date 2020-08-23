@@ -16,4 +16,4 @@ export const PER_PAGE = 100;
 export const ISSUE_NUM = 1;
 export const YEAR_2018 = new Date('2018-01-01');
 export const YEAR_2019 = new Date('2019-01-01');
-export const SERVER_HOST = 'http://qzone.xiaomaidong.com/data/userinfo/'
+export const SERVER_HOST = 'http://qzone.xiaomaidong.com'
