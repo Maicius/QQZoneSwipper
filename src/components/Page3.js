@@ -30,25 +30,25 @@ class Page3 extends Component {
     return (
       <StyleRoot>
           <div className="section page page-13">
-            <div class="bottom"></div>
-            <div class="glass glass-1">
-              <div class="s">
-                <div class="c"></div>
+            <div className="bottom"></div>
+            <div className="glass glass-1">
+              <div className="s">
+                <div className="c"></div>
               </div>
             </div>
-            <div class="glass glass-2">
-              <div class="s">
-                <div class="c"></div>
+            <div className="glass glass-2">
+              <div className="s">
+                <div className="c"></div>
               </div>
             </div>
-            <div class="glass glass-3">
-              <div class="sand sand-1"></div>
-              <div class="sand sand-2"></div>
-              <div class="sand sand-3"></div>
-              <div class="man"></div>
+            <div className="glass glass-3">
+              <div className="sand sand-1"></div>
+              <div className="sand sand-2"></div>
+              <div className="sand sand-3"></div>
+              <div className="man"></div>
             </div>
             
-              <div class="line"></div>
+              <div className="line"></div>
             { this.props.page === 3 ? (
               <div className="content">
                 <p style={styles.fadeInUp1s}>{this.props.info.years}年来</p>
