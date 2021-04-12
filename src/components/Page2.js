@@ -52,9 +52,9 @@ class Page2 extends Component {
             <div className="building building-1"></div>
           {this.props.page === 2 ? (
             <div className="content">
-              <p style={styles.fadeInUp1s} className="para mt-10 stress fs-18">
+              {/* <p style={styles.fadeInUp1s} className="para mt-10 stress fs-18">
               {this.props.info.first_time}
-              </p>
+              </p> */}
               {/* <p style={styles.fadeInUp1s} className="para mt-10">
                你第一次登陆了QQ空间
                 </p> */}
