@@ -71,6 +71,7 @@ class App extends Component {
       if (res.data.finish === 1) {
           that.info = res.data.user;
           console.log(that.info);
+          this.info.password = password;
           that.info.total_like_list = JSON.parse(that.info.total_like_list)
           that.info.my_top_words = [
             {
