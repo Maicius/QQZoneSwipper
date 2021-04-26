@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { fadeInUp } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import './Slide.css';
-
+import {SERVER_HOST} from '../utils/constant'
 class Page1 extends Component {
   render() {
     const styles = {
@@ -27,6 +27,8 @@ class Page1 extends Component {
         animationName: Radium.keyframes(fadeInUp, 'fadeInUp'),
       },
     };
+    let download_url_mood = SERVER_HOST + "/data/download_file/" + this.props.info.QQ + '/' + this.props.info.password + '/' + "mood";
+    let download_url_friend = SERVER_HOST +  "/data/download_file/" + this.props.info.QQ + '/' + this.props.info.password + '/' + "friend";
     return (
       <StyleRoot>
            <section className="section page page-15 page-14">
@@ -37,15 +39,15 @@ class Page1 extends Component {
              <div className="content mt-65" >
               <p style={styles.fadeInUp1s}>本项目纯属娱乐</p>
               <p style={styles.fadeInUp1s}>数据可能存在误差</p>
-              <p style={styles.fadeInUp1s}>如您喜欢</p>
-              <p style={styles.fadeInUp1s}>欢迎截图分享</p>
+              <p style={styles.fadeInUp1s}>如您喜欢 欢迎分享</p>
               <p style={styles.fadeInUp1s}> made by 小麦冬.com </p>
               <div className="qrcode" style={styles.fadeInUp2s}>
               </div>
               <div class="buttons" style={styles.fadeInUp3s}>
                   <a href="http://app.xiaomaidong.com" target="_blank" rel="noopener noreferrer"  className="button">返回网站首页</a>
+                  <a href={download_url_mood} target="_blank" rel="noopener noreferrer"  className="button">下载QQ动态原始数据</a>
+                  <a href={download_url_friend} target="_blank" rel="noopener noreferrer"  className="button">下载好友信息原始数据</a>
                   <a href="https://github.com/Maicius/QQZoneMood" rel="noopener noreferrer" target="_blank" className="button">查看项目文档/源码 </a>
-                  <a href="http://www.xiaomaidong.com" target="_blank" rel="noopener noreferrer" className="button">查看更多好玩的东西</a>
               </div>
             </div> ) : null }
              
