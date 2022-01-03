@@ -8,7 +8,7 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "@octokit/rest": "^16.8.1",
     "antd": "^3.12.3",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "bootstrap": "^4.3.1",
     "echarts": "^4.6.0",
     "echarts-for-react": "^2.0.15-beta.1",
